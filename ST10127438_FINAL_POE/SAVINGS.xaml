@@ -1,0 +1,109 @@
+﻿<Window x:Class="ST10127438_FINAL_POE.SAVINGS"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ST10127438_FINAL_POE"
+        mc:Ignorable="d"
+        Title="Saving" Height="279.056" Width="433">
+    <Grid Margin="0,0,-87,-29">
+        <Grid.Background>
+            <ImageBrush ImageSource="/moon1.jpg"/>
+        </Grid.Background>
+
+        <GroupBox Header=" Savings" HorizontalAlignment="Left" Height="254" Margin="11,9,0,0" VerticalAlignment="Top" Width="475" FontFamily="Agency FB" FontSize="15" FontWeight="Bold">
+            <Grid HorizontalAlignment="Left" Height="231" Margin="-14,0,0,0" VerticalAlignment="Top" Width="477">
+                <Label Content="Amount:" HorizontalAlignment="Left" Margin="52,82,0,0" VerticalAlignment="Top" FontSize="15" RenderTransformOrigin="0.884,0.679" FontFamily="Agency FB"/>
+                <Label Content="Period:" HorizontalAlignment="Left" Margin="54,140,0,0" VerticalAlignment="Top" FontSize="15" FontWeight="Bold" FontFamily="Agency FB"/>
+                <Label Content="Reason:" HorizontalAlignment="Left" Margin="52,110,0,0" VerticalAlignment="Top" FontSize="15" FontWeight="Bold" FontFamily="Agency FB"/>
+                <TextBox x:Name="txtReason" HorizontalAlignment="Left" Height="25" Margin="154,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged">
+                    <TextBox.Background>
+                        <SolidColorBrush Color="White" Opacity="0.5"/>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBox x:Name="txtPeriod" HorizontalAlignment="Left" Height="23" Margin="154,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120">
+                    <TextBox.Background>
+                        <SolidColorBrush Color="White" Opacity="0.5"/>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBox x:Name="txtAmount" HorizontalAlignment="Left" Height="23" Margin="154,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="12">
+                    <TextBox.Background>
+                        <SolidColorBrush Color="White" Opacity="0.5"/>
+                    </TextBox.Background>
+                </TextBox>
+                <Button Content="BACK" Margin="353,49,49,0" VerticalAlignment="Top" FontFamily="Agency FB" Click="btnBack" Height="27" BorderBrush="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" Foreground="White" FontSize="14" RenderTransformOrigin="1.305,0.601">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0" Opacity="0.5">
+                            <GradientStop Color="Black"/>
+                            <GradientStop Color="#FFFFFBFB"/>
+                            <GradientStop Color="#FF9A9898" Offset="0.605"/>
+                            <GradientStop Color="#FF807E7E"/>
+                            <GradientStop Color="#FFFFFBFB" Offset="0.227"/>
+                            <GradientStop Color="#FFE2DFDF" Offset="0.421"/>
+                            <GradientStop Color="#FFF4F1F1" Offset="0.296"/>
+                            <GradientStop Color="#FFF4F1F1" Offset="0.296"/>
+                            <GradientStop Color="#FFFFFBFB" Offset="0.296"/>
+                            <GradientStop Color="#FFCDCACA" Offset="0.066"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Label Content="" x:Name="lbCT" HorizontalAlignment="Left" Margin="226,222,0,-17" VerticalAlignment="Top" Height="26" Width="133" FontFamily="Impact" FontSize="12" FontWeight="Bold" FontStyle="Italic"/>
+                <Label Content="Interest(%):" HorizontalAlignment="Left" Margin="51,53,0,0" VerticalAlignment="Top" FontSize="15" FontFamily="Agency FB"/>
+                <TextBox x:Name="txtInterest" HorizontalAlignment="Left" Height="23" Margin="154,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="tbInter_TextChanged">
+                    <TextBox.Background>
+                        <SolidColorBrush Color="White" Opacity="0.5"/>
+                    </TextBox.Background>
+                </TextBox>
+            </Grid>
+        </GroupBox>
+        <Button Content="Next" Margin="355,162,89,0" VerticalAlignment="Top" Click="btnPropertyProcess" FontSize="14" FontFamily="Agency FB" Height="27" BorderBrush="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" Foreground="White" FontWeight="Bold">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0" Opacity="0.5">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFFFBFB"/>
+                    <GradientStop Color="#FF9A9898" Offset="0.605"/>
+                    <GradientStop Color="#FF807E7E"/>
+                    <GradientStop Color="#FFFFFBFB" Offset="0.227"/>
+                    <GradientStop Color="#FFE2DFDF" Offset="0.421"/>
+                    <GradientStop Color="#FFF4F1F1" Offset="0.296"/>
+                    <GradientStop Color="#FFF4F1F1" Offset="0.296"/>
+                    <GradientStop Color="#FFFFFBFB" Offset="0.296"/>
+                    <GradientStop Color="#FFCDCACA" Offset="0.066"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Content="SHOW STATEMENT" HorizontalAlignment="Left" Height="27" Margin="209,203,0,0" VerticalAlignment="Top" Width="151" FontFamily="Agency FB" FontWeight="Bold" Click="btnShowStatement" FontSize="14" BorderBrush="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" Foreground="White">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0" Opacity="0.5">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFFFBFB"/>
+                    <GradientStop Color="#FF9A9898" Offset="0.605"/>
+                    <GradientStop Color="#FF807E7E"/>
+                    <GradientStop Color="#FFFFFBFB" Offset="0.227"/>
+                    <GradientStop Color="#FFE2DFDF" Offset="0.421"/>
+                    <GradientStop Color="#FFF4F1F1" Offset="0.296"/>
+                    <GradientStop Color="#FFF4F1F1" Offset="0.296"/>
+                    <GradientStop Color="#FFFFFBFB" Offset="0.296"/>
+                    <GradientStop Color="#FFCDCACA" Offset="0.066"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Content="DELETE" HorizontalAlignment="Left" Height="27" Margin="355,118,0,0" VerticalAlignment="Top" Width="76" FontFamily="Agency FB" FontWeight="Bold" Click="btnDelete" FontSize="14" BorderBrush="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" Foreground="White">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0" Opacity="0.5">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFFFBFB"/>
+                    <GradientStop Color="#FF9A9898" Offset="0.605"/>
+                    <GradientStop Color="#FF807E7E"/>
+                    <GradientStop Color="#FFFFFBFB" Offset="0.227"/>
+                    <GradientStop Color="#FFE2DFDF" Offset="0.421"/>
+                    <GradientStop Color="#FFF4F1F1" Offset="0.296"/>
+                    <GradientStop Color="#FFF4F1F1" Offset="0.296"/>
+                    <GradientStop Color="#FFFFFBFB" Offset="0.296"/>
+                    <GradientStop Color="#FFCDCACA" Offset="0.066"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label Content="" x:Name="lblErr" HorizontalAlignment="Left" Margin="24,156,0,0" VerticalAlignment="Top" Width="306" Height="24" FontFamily="Cooper Black" FontSize="10.5" Foreground="#FFC71E1E" Background="{x:Null}"/>
+    </Grid>
+</Window>

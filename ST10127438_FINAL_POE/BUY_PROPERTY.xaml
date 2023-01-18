@@ -1,0 +1,97 @@
+﻿<Window x:Class="ST10127438_FINAL_POE.BUY_PROPERTY"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ST10127438_FINAL_POE"
+        mc:Ignorable="d"
+        Title="Property" Height="398.42" Width="353.683">
+    <Grid Margin="0,0,0,-1" HorizontalAlignment="Center" Width="354">
+        <Grid.Background>
+            <ImageBrush ImageSource="/moon1.jpg"/>
+        </Grid.Background>
+
+        <GroupBox Header="Property" HorizontalAlignment="Left" Height="343" Margin="12,13,0,0" VerticalAlignment="Top" Width="323" FontFamily="Cooper Black" FontWeight="Bold" BorderBrush="#FFBFBFBF" FontSize="16" FontStyle="Italic" Cursor="">
+        </GroupBox>
+        <Grid HorizontalAlignment="Left" Height="342" Margin="10,0,0,0" VerticalAlignment="Top" Width="530">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="441*"/>
+            </Grid.ColumnDefinitions>
+            <Button Content="Next" Grid.Column="1" HorizontalAlignment="Center" Margin="0,69,0,0" VerticalAlignment="Top" Width="53" FontWeight="Bold" FontFamily="Cooper Black" Click="btnNext" Height="28" BorderBrush="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" Foreground="White">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0" Opacity="0.5">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="#FFFFFBFB"/>
+                        <GradientStop Color="#FF9A9898" Offset="0.605"/>
+                        <GradientStop Color="#FF807E7E"/>
+                        <GradientStop Color="#FFFFFBFB" Offset="0.227"/>
+                        <GradientStop Color="#FFE2DFDF" Offset="0.421"/>
+                        <GradientStop Color="#FFF4F1F1" Offset="0.296"/>
+                        <GradientStop Color="#FFF4F1F1" Offset="0.296"/>
+                        <GradientStop Color="#FFFFFBFB" Offset="0.296"/>
+                        <GradientStop Color="#FFCDCACA" Offset="0.066"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Content="BACK" Grid.Column="1" HorizontalAlignment="Center" Margin="0,167,0,0" VerticalAlignment="Top" Width="53" FontFamily="Cooper Black" Click="btnBack" Height="28" BorderBrush="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" Foreground="White">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0" Opacity="0.5">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="#FFFFFBFB"/>
+                        <GradientStop Color="#FF9A9898" Offset="0.605"/>
+                        <GradientStop Color="#FF807E7E"/>
+                        <GradientStop Color="#FFFFFBFB" Offset="0.227"/>
+                        <GradientStop Color="#FFE2DFDF" Offset="0.421"/>
+                        <GradientStop Color="#FFF4F1F1" Offset="0.296"/>
+                        <GradientStop Color="#FFF4F1F1" Offset="0.296"/>
+                        <GradientStop Color="#FFFFFBFB" Offset="0.296"/>
+                        <GradientStop Color="#FFCDCACA" Offset="0.066"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <TextBox x:Name="txtPurPrice" HorizontalAlignment="Left" Height="23" Margin="0,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187" FontFamily="Cooper Black" BorderBrush="{x:Null}" Grid.Column="1"/>
+            <TextBox x:Name="txtPInterest" HorizontalAlignment="Left" Height="23" Margin="2,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Cooper Black" BorderBrush="{x:Null}" Grid.Column="1"/>
+            <TextBox x:Name="txtPTotalDept" HorizontalAlignment="Left" Height="23" Margin="2,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="114" FontFamily="Cooper Black" BorderBrush="{x:Null}" Grid.Column="1"/>
+            <TextBox x:Name="txtPMonthsRepay" HorizontalAlignment="Left" Height="23" Margin="1,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111" FontFamily="Cooper Black" BorderBrush="{x:Null}" Grid.Column="1"/>
+            <Label Content="" x:Name="lblErr" HorizontalAlignment="Left" Margin="19,272,0,0" VerticalAlignment="Top" Width="304" Height="24" FontFamily="Cooper Black" Foreground="#FFF10A0A" Grid.ColumnSpan="2" FontWeight="Bold"/>
+            <GroupBox Header="Purchase Price" HorizontalAlignment="Left" Height="51" Margin="33,51,0,0" VerticalAlignment="Top" Width="214" BorderBrush="#FFC5C5C7" FontFamily="Cooper Black" FontSize="15" Grid.ColumnSpan="2" FontWeight="Bold" FontStyle="Italic"/>
+            <GroupBox Header="Interest Rate(%)" HorizontalAlignment="Left" Height="50" Margin="33,166,0,0" VerticalAlignment="Top" Width="211" BorderBrush="#FFCFCFD1" FontFamily="Cooper Black" FontSize="15" Grid.ColumnSpan="2" FontWeight="Bold" FontStyle="Italic"/>
+            <GroupBox Header="Total Deposit" HorizontalAlignment="Left" Height="51" Margin="33,110,0,0" VerticalAlignment="Top" Width="211" BorderBrush="#FFC3C3C5" FontFamily="Cooper Black" FontSize="15" Grid.ColumnSpan="2" FontWeight="Bold" FontStyle="Italic"/>
+            <GroupBox Header="Months" HorizontalAlignment="Left" Height="51" Margin="33,220,0,0" VerticalAlignment="Top" Width="211" BorderBrush="#FFC5C5C7" FontFamily="Cooper Black" FontSize="15" Grid.ColumnSpan="2" FontWeight="Bold" FontStyle="Italic"/>
+            <Button Content="SHOW STATEMENT" HorizontalAlignment="Left" Height="28" Margin="118,297,0,0" VerticalAlignment="Top" Width="132" FontFamily="Cooper Black" FontWeight="Bold" Click="btnShowStatement" FontSize="12" BorderBrush="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" Foreground="White" Grid.Column="1">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0" Opacity="0.5">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="#FFFFFBFB"/>
+                        <GradientStop Color="#FF9A9898" Offset="0.605"/>
+                        <GradientStop Color="#FF807E7E"/>
+                        <GradientStop Color="#FFFFFBFB" Offset="0.227"/>
+                        <GradientStop Color="#FFE2DFDF" Offset="0.421"/>
+                        <GradientStop Color="#FFF4F1F1" Offset="0.296"/>
+                        <GradientStop Color="#FFF4F1F1" Offset="0.296"/>
+                        <GradientStop Color="#FFFFFBFB" Offset="0.296"/>
+                        <GradientStop Color="#FFCDCACA" Offset="0.066"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Content="DELETE" HorizontalAlignment="Center" Height="28" Margin="0,110,0,0" VerticalAlignment="Top" Width="53" FontFamily="Cooper Black" FontWeight="Bold" Click="btnDelete" FontSize="12" BorderBrush="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" Foreground="White" Grid.Column="1">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0" Opacity="0.5">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="#FFFFFBFB"/>
+                        <GradientStop Color="#FF9A9898" Offset="0.605"/>
+                        <GradientStop Color="#FF807E7E"/>
+                        <GradientStop Color="#FFFFFBFB" Offset="0.227"/>
+                        <GradientStop Color="#FFE2DFDF" Offset="0.421"/>
+                        <GradientStop Color="#FFF4F1F1" Offset="0.296"/>
+                        <GradientStop Color="#FFF4F1F1" Offset="0.296"/>
+                        <GradientStop Color="#FFFFFBFB" Offset="0.296"/>
+                        <GradientStop Color="#FFCDCACA" Offset="0.066"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Label Content="" x:Name="lbCT" HorizontalAlignment="Left" Margin="146,328,0,-12" VerticalAlignment="Top" Height="26" Width="130" FontFamily="Impact" FontSize="12" FontWeight="Bold" Grid.Column="1" FontStyle="Italic"/>
+        </Grid>
+    </Grid>
+</Window>

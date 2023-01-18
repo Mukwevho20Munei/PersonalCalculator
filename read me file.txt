@@ -1,0 +1,36 @@
+read me file
+
+ 
+1. download the record (zipped record prog6211_ST10127438¬ _final poe _MUNEI-MUKWEVHO), find the record withinside the downloads or your default down load folder
+2. Extract all/unzip document, open the record written prog6211_ST10127438_final poe _MUNEI-MUKWEVHO after extraction.
+3. Under prog6211_ST10127438_MUNEI-MUKWEVHO record open C# mission record written st10127438_final poe
+4. When this system opens and indicates all coding, at the menu bar the is a button in inexperienced with image of play  close to the button those phrases written st10127438_final poe which shows the call of this system opened, click on at the button, and watch for few seconds/mins for this system to construct and display a window.
+5. A window with a message  Home Loan Page will appear.
+6. The application will start to spark off the consumer, the consumer need to press input after each enter they make.
+7. Enter all values below every query:
+ month-to-month gross profits earlier than deduction
+ tax deduction
+ groceries
+ water and electricity
+ tour charges along with petrol
+ mobileular telecellsmartphone and telephone
+ different expenses
+8. this system will spark off a query wherein you pick the sort of Property you need. The consumer will select among 1. Rent or 2 that is purchase property.
+9. If the consumer selects alternative 1 that is hire, this system will spark off a query
+ Enter month-to-month hire quantity
+10. After the consumer inputs the value, this system will calculate the full in spite of everything month-to-month deductions. If the hire quantity is extra than month-to-month profits without or with deductions, then this system will provide out a waring massage “homeloan is unluckily”.
+11. If the consumer selects alternative 2 that is purchase property, this system will spark off a questions
+ Purchase charge of the property
+ Total deposit
+ Interest rate (percentage)
+ Number of months to repay (among 240 and 360
+12. The application will calculate homeloan overall in spite of everything deductions after the consumer’s inputs. if the house mortgage reimbursement is extra than the 1/3 this system will provide out caution message “homeloan is unluckily”. Then display the ultimate stability in spite of everything deductions.
+1. The application will spark off the query do you need to buy a automobile, select among 1 and 2.
+2. Then input all values been requested for if decided on a. Model and make.
+b. Purchase charge.
+c. Total deposit.
+d. Interest rate (percentage).
+e. Estimated coverage premium
+13. If select no that is 2 this system will close.
+14. The application will the calculate your continue to be stability in spite of everything automobile deductions
+15. The application will cease then the consumer can press any key to shut the window.
